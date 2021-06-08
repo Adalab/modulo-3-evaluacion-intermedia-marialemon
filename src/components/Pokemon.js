@@ -1,10 +1,12 @@
-function Pokemon() {
+function Pokemon(props) {
   return (
-    <div className="Pokemon">
-      <li>
-        <h3>Pokemon</h3>
-      </li>
-    </div>
+    <article className="Pokemon">
+      <img src={props.image} alt={props.name} width="150" />
+      <h3>{props.name}</h3>
+      <ul>
+        <li className="ItemTypes">{props.types}</li>
+      </ul>
+    </article>
   );
 }
 

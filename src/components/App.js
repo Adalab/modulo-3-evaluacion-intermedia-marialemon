@@ -10,7 +10,6 @@ function App() {
       </header>
       <main>
         <PokeList list={data}></PokeList>
-        <h2>Pokémon favoritos</h2>
       </main>
     </div>
   );

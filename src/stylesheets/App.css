@@ -4,11 +4,36 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.PokeList {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.Pokemon {
+  background-color: rgba(127, 255, 212, 0.3);
+  border: thin solid black;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+.ItemTypes {
+  background-color: #888;
+  border-radius: 1rem;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0.2rem;
 }
