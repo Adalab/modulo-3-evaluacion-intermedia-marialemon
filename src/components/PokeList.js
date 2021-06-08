@@ -1,12 +1,11 @@
 import Pokemon from "./Pokemon";
 
 function PokeList(props) {
-  // console.log(props.list);
   const pokeItems = props.list.map((item) => {
-    //   console.log(item.name);
     return (
-      <li>
-        <Pokemon image={item.url} name={item.name} types={item.types} />
+      <li key={item.id}>
+        {/* Pasamos todo el objeto por props al componente */}
+        <Pokemon item={item} />
       </li>
     );
   });

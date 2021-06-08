@@ -1,11 +1,17 @@
 function Pokemon(props) {
+  console.log(props.item.types);
+
   return (
     <article className="Pokemon">
-      <img src={props.image} alt={props.name} width="150" />
-      <h3>{props.name}</h3>
-      <ul>
-        <li className="ItemTypes">{props.types}</li>
-      </ul>
+      <img
+        src={props.item.url}
+        alt={props.item.name}
+        title={props.item.name}
+        aria-label={props.item.name}
+        width="150"
+      />
+      <h3>{props.item.name}</h3>
+      <ul></ul>
     </article>
   );
 }
